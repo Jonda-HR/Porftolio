@@ -2,53 +2,29 @@
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      github: "#",
+      title: "CONTADITO APP",
+      description: "Contadito APP is a comprehensive accounting, invoicing, and inventory solution, developed with Next.js and React, utilizing modern Chakra UI components for a clean and intuitive user experience.",
+      technologies: ["React", "Next.js", "AWS", "Graphql", "Chakra.ui"],
+      github: "https://github.com/AbstractDevStudio/contadito-app",
       demo: "#",
       color: "neon-fuchsia"
     },
     {
-      title: "AI Chat Application",
-      description: "Real-time chat application with AI integration using OpenAI API. Built with React, Socket.io, and Express.js for seamless communication.",
-      technologies: ["React", "Socket.io", "OpenAI", "Express"],
-      github: "#",
+      title: "CONTADITO API",
+      description: "Contadito API is a powerful API developed with NestJS, designed to manage all the business logic of the Contadito APP. With a robust and scalable architecture, it offers secure and efficient accounting, invoicing, and inventory services.",
+      technologies: ["Node.js", "Nest.js", "TypeORM", "PosgresSQL", "Graphql"],
+      github: "https://github.com/AbstractDevStudio/contadito-api",
       demo: "#",
       color: "neon-electric-blue"
     },
     {
-      title: "Task Management System",
-      description: "Collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      technologies: ["Vue.js", "Firebase", "Vuetify", "PWA"],
-      github: "#",
+      title: "PORTFOLIO",
+      description: "This personal portfolio was developed using React, Vite, and Tailwind CSS, with the goal of reflecting both my technical skills and my creative style. It's a space where I share some of my projects, my experience as a full-stack developer, and my passion for technology. Each section has been designed to offer a fluid, modern, and responsive experience across different devices.",
+      technologies: ["vite", "react", "tailwindcss", "typescript"],
+      github: "https://github.com/Jonda-HR/Porftolio",
       demo: "#",
       color: "neon-purple"
     },
-    {
-      title: "Weather Dashboard",
-      description: "Interactive weather dashboard with data visualization, location-based forecasts, and historical weather data analysis.",
-      technologies: ["React", "D3.js", "Weather API", "Tailwind"],
-      github: "#",
-      demo: "#",
-      color: "neon-yellow"
-    },
-    {
-      title: "Blockchain Wallet",
-      description: "Cryptocurrency wallet application with transaction history, multi-currency support, and secure key management.",
-      technologies: ["React", "Web3.js", "Ethereum", "MetaMask"],
-      github: "#",
-      demo: "#",
-      color: "neon-fuchsia"
-    },
-    {
-      title: "Music Streaming App",
-      description: "Spotify-like music streaming application with playlist creation, social features, and audio visualization.",
-      technologies: ["React Native", "Node.js", "PostgreSQL", "AWS"],
-      github: "#",
-      demo: "#",
-      color: "neon-electric-blue"
-    }
   ];
 
   return (
@@ -70,7 +46,7 @@ const Projects = () => {
 
           {/* Projects Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
+            {projects.map((project) => (
               <div
                 key={project.title}
                 className="group relative retro-card hover:transform hover:scale-105 transition-all duration-300"
@@ -138,9 +114,7 @@ const Projects = () => {
               </div>
             ))}
           </div>
-
-          {/* View More Button */}
-          <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
             <a
               href="#"
               className="neon-button border-neon-purple text-neon-purple hover:bg-neon-purple hover:text-black inline-flex items-center"
@@ -149,7 +123,7 @@ const Projects = () => {
               View All Projects
               <span className="ml-2">{'<'}</span>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

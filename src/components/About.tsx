@@ -1,12 +1,16 @@
 
 const About = () => {
   const skills = [
-    { name: 'React', level: 95, color: 'text-neon-electric-blue' },
-    { name: 'Node.js', level: 90, color: 'text-neon-fuchsia' },
-    { name: 'TypeScript', level: 88, color: 'text-neon-purple' },
-    { name: 'Python', level: 85, color: 'text-neon-yellow' },
-    { name: 'MongoDB', level: 80, color: 'text-neon-electric-blue' },
-    { name: 'Docker', level: 75, color: 'text-neon-fuchsia' },
+    { name: 'React', level: 90, color: 'text-neon-electric-blue' },
+    { name: 'Node.js', level: 95, color: 'text-neon-fuchsia' },
+    { name: 'Next.js', level: 90, color: 'text-neon-yellow' },
+    { name: 'Nest.js', level: 95, color: 'text-neon-purple' },
+    { name: 'TypeScript', level: 90, color: 'text-neon-electric-blue' },
+    { name: 'SQL', level: 90, color: 'text-neon-fuchsia' },
+    { name: 'Docker', level: 50, color: 'text-neon-yellow' },
+    { name: 'git', level: 90, color: 'text-neon-electric-blue' },
+    { name: 'HTML', level: 100, color: 'text-neon-fuchsia' },
+    { name: 'CSS', level: 90, color: 'text-neon-yellow' },
   ];
 
   return (
@@ -31,14 +35,7 @@ const About = () => {
                   $ whoami
                 </h3>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  I'm a passionate full-stack developer with over 5 years of experience 
-                  building scalable web applications. I love working with modern technologies 
-                  and creating seamless user experiences.
-                </p>
-                <p className="text-gray-300 leading-relaxed">
-                  When I'm not coding, you'll find me exploring new technologies, 
-                  contributing to open-source projects, or enjoying a good cup of coffee 
-                  while debugging late into the night.
+                  I'm a passionate full-stack developer with over two years of experience building scalable web applications. I'm passionate about working with modern technologies and creating seamless user experiences. I enjoy learning new things.
                 </p>
               </div>
 
@@ -49,15 +46,11 @@ const About = () => {
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex items-center">
                     <span className="text-neon-yellow mr-2">▶</span>
-                    Building scalable React applications
+                    Developing scalable React applications
                   </li>
                   <li className="flex items-center">
                     <span className="text-neon-yellow mr-2">▶</span>
-                    Exploring AI/ML integration
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-neon-yellow mr-2">▶</span>
-                    Contributing to open source
+                    Learning new things
                   </li>
                 </ul>
               </div>

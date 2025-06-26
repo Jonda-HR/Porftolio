@@ -49,57 +49,57 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact Info */}
-            <div className="space-y-8">
-              <div className="retro-card">
-                <h3 className="text-2xl font-bold text-neon-electric-blue mb-6 font-mono">
-                  $ contact --info
-                </h3>
-                <div className="space-y-4">
-                  <div className="flex items-center">
-                    <span className="text-neon-fuchsia mr-3 font-mono">{'>'}</span>
-                    <span className="text-gray-300">john.doe@example.com</span>
-                  </div>
-                  <div className="flex items-center">
-                    <span className="text-neon-fuchsia mr-3 font-mono">{'>'}</span>
-                    <span className="text-gray-300">+1 (555) 123-4567</span>
-                  </div>
-                  <div className="flex items-center">
-                    <span className="text-neon-fuchsia mr-3 font-mono">{'>'}</span>
-                    <span className="text-gray-300">San Francisco, CA</span>
-                  </div>
-                </div>
-              </div>
+<div className="grid lg:grid-cols-2 gap-12">
+  {/* Contact Info - Primera columna */}
+  <div className="retro-card">
+    <h3 className="text-2xl font-bold text-neon-electric-blue mb-6 font-mono">
+      $ contact --info
+    </h3>
+    <div className="space-y-4">
+      <div className="flex items-center">
+        <span className="text-neon-fuchsia mr-3 font-mono">{'>'}</span>
+        <span className="text-gray-300">jd.hrez@gmail.com</span>
+      </div>
+      <div className="flex items-center">
+        <span className="text-neon-fuchsia mr-3 font-mono">{'>'}</span>
+        <span className="text-gray-300">+(504) 9694-7611</span>
+      </div>
+      <div className="flex items-center">
+        <span className="text-neon-fuchsia mr-3 font-mono">{'>'}</span>
+        <span className="text-gray-300">Tegucigalpa, Honduras</span>
+      </div>
+    </div>
+  </div>
 
-              <div className="retro-card">
-                <h3 className="text-xl font-bold text-neon-yellow mb-4 font-mono">
-                  {"// Social Links"}
-                </h3>
-                <div className="space-y-3">
-                  {[
-                    { name: 'GitHub', url: '#', color: 'text-neon-fuchsia' },
-                    { name: 'LinkedIn', url: '#', color: 'text-neon-electric-blue' },
-                    { name: 'Twitter', url: '#', color: 'text-neon-purple' },
-                    { name: 'Portfolio', url: '#', color: 'text-neon-yellow' }
-                  ].map((link) => (
-                    <a
-                      key={link.name}
-                      href={link.url}
-                      className={`block ${link.color} hover:text-white transition-colors font-mono group`}
-                    >
-                      <span className="mr-2">{'<'}</span>
-                      {link.name}
-                      <span className="ml-2">{'>'}</span>
-                      <div className="w-0 group-hover:w-full h-0.5 bg-current transition-all duration-300"></div>
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </div>
+  {/* Social Links - Segunda columna */}
+  <div className="retro-card">
+    <h3 className="text-xl font-bold text-neon-yellow mb-4 font-mono">
+      {"// Social Links"}
+    </h3>
+    <div className="space-y-3">
+      {[
+        { name: 'GitHub', url: 'https://github.com/Jonda-HR', color: 'text-neon-fuchsia' },
+        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jonathan-hern%C3%A1ndez-9a5938215/', color: 'text-neon-electric-blue' },
+        { name: 'Instagram', url: 'https://www.instagram.com/jonda_hr/', color: 'text-neon-purple' },
+        { name: 'Portfolio', url: '#', color: 'text-neon-yellow' }
+      ].map((link) => (
+        <a
+          key={link.name}
+          href={link.url}
+          className={`block ${link.color} hover:text-white transition-colors font-mono group`}
+        >
+          <span className="mr-2">{'<'}</span>
+          {link.name}
+          <span className="ml-2">{'>'}</span>
+          <div className="w-0 group-hover:w-full h-0.5 bg-current transition-all duration-300"></div>
+        </a>
+      ))}
+    </div>
+  </div>
+</div>
 
-            {/* Contact Form */}
-            <div className="retro-card">
+           {/* Contact Form */}
+            {/* <div className="retro-card">
               <h3 className="text-2xl font-bold text-neon-fuchsia mb-6 font-mono">
                 {"// Send Message"}
               </h3>
@@ -166,8 +166,7 @@ const Contact = () => {
                   )}
                 </button>
               </form>
-            </div>
-          </div>
+            </div> */}
         </div>
       </div>
     </section>

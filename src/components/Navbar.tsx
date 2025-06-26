@@ -14,19 +14,19 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="text-neon-fuchsia font-bold text-xl neon-text">
+          <div className="text-neon-fuchsia font-bold text-2xl md:text-4xl neon-text">
             &lt;DEV/&gt;
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-10">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-300 hover:text-neon-electric-blue transition-colors duration-300 font-mono glitch relative group"
+                className="text-md md:text-xl text-gray-300 hover:text-neon-electric-blue transition-colors duration-200 font-mono glitch relative group"
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-neon-electric-blue transition-all duration-300 group-hover:w-full"></span>
