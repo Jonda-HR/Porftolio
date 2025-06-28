@@ -96,11 +96,11 @@ const Projects = () => {
                       className={`flex items-center text-${project.color} hover:text-white transition-colors text-sm font-mono group/link`}
                     >
                       <span className="mr-1">{'<'}</span>
-                      Github
+                      GitHub
                       <span className="ml-1">{'>'}</span>
                       <div className="w-0 group-hover/link:w-full h-0.5 bg-current transition-all duration-300 ml-1"></div>
                     </a>
-                    <a
+                    {/* <a
                       href={project.demo}
                       className="flex items-center text-gray-400 hover:text-neon-yellow transition-colors text-sm font-mono group/link"
                     >
@@ -108,7 +108,7 @@ const Projects = () => {
                       Live Demo
                       <span className="ml-1">{'>'}</span>
                       <div className="w-0 group-hover/link:w-full h-0.5 bg-current transition-all duration-300 ml-1"></div>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>

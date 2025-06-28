@@ -73,8 +73,8 @@ const Contact = () => {
 
   {/* Social Links - Segunda columna */}
   <div className="retro-card">
-    <h3 className="text-xl font-bold text-neon-yellow mb-4 font-mono">
-      {"// Social Links"}
+    <h3 className="text-2xl font-bold text-neon-yellow mb-4 font-mono">
+      $ social --info
     </h3>
     <div className="space-y-3">
       {[

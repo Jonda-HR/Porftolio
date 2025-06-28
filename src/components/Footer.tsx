@@ -15,9 +15,9 @@ const Footer = () => {
           
           <div className="flex space-x-6">
             {[
-              { name: 'GitHub', url: '#' },
-              { name: 'LinkedIn', url: '#' },
-              { name: 'Instagram', url: '#' }
+              { name: 'GitHub', url: 'https://github.com/Jonda-HR' },
+              { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jonathan-hern%C3%A1ndez-9a5938215/' },
+              { name: 'Instagram', url: 'https://www.instagram.com/jonda_hr/s' }
             ].map((link) => (
               <a
                 key={link.name}
@@ -29,12 +29,6 @@ const Footer = () => {
               </a>
             ))}
           </div>
-        </div>
-        
-        <div className="mt-4 text-center">
-          <p className="text-gray-500 font-mono text-xs">
-            {"// Designed and coded in the spirit of the 80s"}
-          </p>
         </div>
       </div>
     </footer>
