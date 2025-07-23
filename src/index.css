@@ -8,6 +8,9 @@
 
 @layer base {
   :root {
+    --neon-fuchsia: #FF00FF;
+    --neon-electric-blue: #00FFFF;
+
     --background: 0 0% 5%;
     --foreground: 0 0% 95%;
 
@@ -168,5 +171,48 @@
 
   .neon-button:hover::before {
     left: 100%;
+  }
+  
+   @keyframes float-enhanced {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-10px) rotate(2deg);
+    }
+  }
+  
+  @keyframes neon-pulse {
+    0%, 100% {
+      opacity: 0.3;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.6;
+      transform: scale(1.02);
+    }
+  }
+  
+  @keyframes text-pulse {
+    0%, 100% {
+      text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+      opacity: 1;
+    }
+    50% {
+      text-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff;
+      opacity: 0.9;
+    }
+  }
+  
+  .animate-float-enhanced {
+    animation: float-enhanced 6s ease-in-out infinite;
+  }
+  
+  .animate-neon-pulse {
+    animation: neon-pulse 3s ease-in-out infinite alternate;
+  }
+  
+  .neon-text-pulse {
+    animation: text-pulse 2s ease-in-out infinite alternate;
   }
 }

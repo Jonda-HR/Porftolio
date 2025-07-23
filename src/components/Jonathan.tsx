@@ -29,18 +29,21 @@ const Jonathan = () => {
 
       <div className="container mx-auto px-4 text-center relative z-10">
         {/* Avatar */}
-        <div className="mb-8 flex justify-center">
-          <div className="relative">
-            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-r from-neon-fuchsia via-neon-purple to-neon-electric-blue p-1 animate-float">
-              <div className="w-full h-full rounded-full bg-black flex items-center justify-center">
-                <div className="text-4xl md:text-5xl font-bold text-neon-fuchsia neon-text">
-                  {'</>'}
-                </div>
-              </div>
-            </div>
-            <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-neon-fuchsia via-neon-purple to-neon-electric-blue opacity-30 blur animate-neon-glow"></div>
-          </div>
+<div className="mb-8 flex justify-center">
+  <div className="relative">
+    {/* Contenedor principal del avatar con animación mejorada */}
+    <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-r from-neon-fuchsia via-neon-purple to-neon-electric-blue p-1 animate-float-enhanced">
+      <div className="w-full h-full rounded-full bg-black flex items-center justify-center">
+        <div className="text-4xl md:text-5xl font-bold text-neon-fuchsia neon-text-pulse">
+          {'</>'}
         </div>
+      </div>
+    </div>
+    
+    {/* Resplandor exterior con animación mejorada */}
+    <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-neon-fuchsia via-neon-purple to-neon-electric-blue opacity-30 blur-lg animate-neon-pulse"></div>
+  </div>
+</div>
 
         {/* Name */}
         <h1 className="text-3xl md:text-6xl lg:text-8xl font-bold mb-6 text-white">

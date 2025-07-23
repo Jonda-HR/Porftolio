@@ -6,7 +6,7 @@ const Projects = () => {
       description: "Contadito APP is a comprehensive accounting, invoicing, and inventory solution, developed with Next.js and React, utilizing modern Chakra UI components for a clean and intuitive user experience.",
       technologies: ["React", "Next.js", "AWS", "Graphql", "Chakra.ui"],
       github: "https://github.com/AbstractDevStudio/contadito-app",
-      demo: "#",
+      demo: "https://app.contadito.com/auth/sign-in",
       color: "neon-fuchsia"
     },
     {
@@ -17,6 +17,14 @@ const Projects = () => {
       demo: "#",
       color: "neon-electric-blue"
     },
+            {
+      title: "CONTADITO WEBSITE",
+      description: "The Contadito website serves as a landing page for the Contadito web application. It provides detailed information about the app's modules, benefits, and subscription plans, helping users understand its value and functionalities.",
+      technologies: ["React", "Next.js", "tailwindcss", "typescript"],
+      github: "https://github.com/AbstractDevStudio/contadito-website",
+      demo: "https://www.contadito.com/",
+      color: "neon-fuchsia"
+    },
     {
       title: "PORTFOLIO",
       description: "This personal portfolio was developed using React, Vite, and Tailwind CSS, with the goal of reflecting both my technical skills and my creative style. It's a space where I share some of my projects, my experience as a full-stack developer, and my passion for technology. Each section has been designed to offer a fluid, modern, and responsive experience across different devices.",
@@ -25,6 +33,7 @@ const Projects = () => {
       demo: "#",
       color: "neon-purple"
     },
+
   ];
 
   return (
@@ -100,15 +109,15 @@ const Projects = () => {
                       <span className="ml-1">{'>'}</span>
                       <div className="w-0 group-hover/link:w-full h-0.5 bg-current transition-all duration-300 ml-1"></div>
                     </a>
-                    {/* <a
+                    <a
                       href={project.demo}
-                      className="flex items-center text-gray-400 hover:text-neon-yellow transition-colors text-sm font-mono group/link"
+                      className={`flex items-center text-${project.color} hover:text-white transition-colors text-sm font-mono group/link`}
                     >
                       <span className="mr-1">{'<'}</span>
-                      Live Demo
+                      View
                       <span className="ml-1">{'>'}</span>
                       <div className="w-0 group-hover/link:w-full h-0.5 bg-current transition-all duration-300 ml-1"></div>
-                    </a> */}
+                    </a>
                   </div>
                 </div>
               </div>

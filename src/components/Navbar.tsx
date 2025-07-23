@@ -16,9 +16,13 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="text-neon-fuchsia font-bold text-2xl md:text-4xl neon-text">
-            &lt;DEV/&gt;
-          </div>
+        <div 
+  className="text-neon-fuchsia font-bold text-2xl md:text-4xl neon-text cursor-pointer hover:scale-105 transition-transform"
+  onClick={() => window.location.href = "#home"}
+  style={{ cursor: 'pointer' }}
+>
+  &lt;JH/&gt;
+</div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-10">
